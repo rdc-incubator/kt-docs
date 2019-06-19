@@ -1,3 +1,3 @@
-* [主页](/)
-* [快速开始](guide.md)
-* [下载](downloads.md)
+* [主页](zh-cn/)
+* [快速开始](zh-cn/guide.md)
+* [下载](zh-cn/downloads.md)
