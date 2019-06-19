@@ -59,7 +59,7 @@ $ curl http://172.19.143.139:8080
 $ curl http://tomcat.default.svc.cluster.local:8080
 ```
 
-## 将集群流量转发到本地
+## Exchange: 将集群流量转发到本地
 
 ![](../_media/demo-2.gif)
 
