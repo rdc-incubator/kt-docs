@@ -1,3 +1,5 @@
+![logo](../_media/logo.png)
+
 # KT <small>0.0.1</small>
 
 > 面向Kubernetes的本地开发者辅助工具
