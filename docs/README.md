@@ -12,6 +12,10 @@ Developer connect to remote Kubernetes internal network, local development and t
 
 Developer can exchange the workload to redirect the request to local app.
 
+* Support Service Mesh
+
+You can create a mesh version in local host and redirect to your local
+
 * Light VPN based on SSH
 
 KT use sshuttle as the vpn tool to access remote Kubernetes cluster network.
@@ -21,6 +25,12 @@ KT use sshuttle as the vpn tool to access remote Kubernetes cluster network.
 Run kt as a kubectl plugin, all you need is kubectl.
 
 ## Release Note
+
+### 0.0.3
+
+> Release At 2019-06-19
+
+* Add `mesh` command to support istio network rule
 
 ### 0.0.2
 

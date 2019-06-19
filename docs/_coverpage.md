@@ -4,7 +4,7 @@
 
 > A sample kubernetes develope tool
 
-- Connect And Exchange
+- Connect, Exchange And Mesh
 
 [Quick start](/guide)
 [Download](/downloads)
