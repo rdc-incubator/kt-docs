@@ -26,7 +26,7 @@ NAME     TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
 tomcat   ClusterIP   172.19.143.139   <none>        8080/TCP   4m
 ```
 
-## Access APP From Local
+## Connect: Access APP From Local
 
 Connect to kubernetes cluster, KT will deployment a proxy pod in cluster：
 
@@ -59,7 +59,7 @@ Access Server internal DNS address
 $ curl http://tomcat.default.svc.cluster.local:8080
 ```
 
-## Access local from cluster
+## Exchange: Access local from cluster
 
 ![](_media/demo-2.gif)
 
