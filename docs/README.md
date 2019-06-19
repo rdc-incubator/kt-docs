@@ -1,5 +1,7 @@
 # Introduction
 
+![](_media/demo-1.gif)
+
 ## Features
 
 * Direct access remote Kubernetes cluster.

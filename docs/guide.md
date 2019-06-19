@@ -30,6 +30,8 @@ tomcat   ClusterIP   172.19.143.139   <none>        8080/TCP   4m
 
 Connect to kubernetes cluster, KT will deployment a proxy pod in cluster：
 
+![](_media/demo-1.gif)
+
 ```shell
 $ sudo ktctl connect
 2019/06/19 11:11:07 Deploying proxy deployment kt-connect-daemon in namespace default
@@ -58,6 +60,8 @@ $ curl http://tomcat.default.svc.cluster.local:8080
 ```
 
 ## Access local from cluster
+
+![](_media/demo-2.gif)
 
 Create Tomcat 8 in local and expose 8080 port
 

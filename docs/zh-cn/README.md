@@ -1,5 +1,7 @@
 # 介绍
 
+![](../_media/demo-1.gif)
+
 ## 特性
 
 * 直接访问Kubernetes集群

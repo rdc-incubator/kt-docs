@@ -30,6 +30,8 @@ tomcat   ClusterIP   172.19.143.139   <none>        8080/TCP   4m
 
 使用connect命令建立本地到集群的VPN网络：
 
+![](../_media/demo-1.gif)
+
 ```shell
 $ sudo ktctl connect
 2019/06/19 11:11:07 Deploying proxy deployment kt-connect-daemon in namespace default
@@ -58,6 +60,8 @@ $ curl http://tomcat.default.svc.cluster.local:8080
 ```
 
 ## 将集群流量转发到本地
+
+![](../_media/demo-2.gif)
 
 为了模拟集群联调本地的情况，我们首先在本地运行一个Tomcat:8的容器
 
