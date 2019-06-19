@@ -1,3 +1,7 @@
 * [主页](zh-cn/)
 * [快速开始](zh-cn/guide.md)
 * [下载](zh-cn/downloads.md)
+* [最佳实践](zh-cn/guide/intro.md)
+* [与其他工具比较](zh-cn/compare.md)
+* [更新日志](zh-cn/release.md)
+* [路线图](zh-cn/roadmap.md)
