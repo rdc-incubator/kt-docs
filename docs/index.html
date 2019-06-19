@@ -20,6 +20,15 @@
       loadSidebar: true,
       loadNavbar: true,
       coverpage: ['/', '/zh-cn/'],
+      plugins: [
+        function (hook, vm) {
+          hook.beforeEach(function (html) {
+            return html
+              + '\n\n----\n\n'
+              + '<a href="https://rdc.aliyun.com" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by 云效（RDC）</a>'
+          })
+        }
+      ]
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
