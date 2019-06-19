@@ -6,5 +6,5 @@
 
 - 连接 & 交换 & 混合
 
-[快速开始](zh-cn/guide)
+[快速开始](zh-cn/quickstart)
 [下载](zh-cn/downloads)

@@ -6,5 +6,5 @@
 
 - Connect, Exchange And Mesh
 
-[Quick start](/guide)
+[Quick start](/quickstart)
 [Download](/downloads)
