@@ -19,3 +19,14 @@ KT使用shhuttle作为网络连接实现，实现轻量级的SSH VPN网络
 * 作为kubectl插件，集成到Kubectl
 
 开发者也可以直接将ktctl集成到kubectl中
+
+## 更新日志
+
+### 0.0.2
+
+* 修复当Namespace启用Istio自动注入后，exchange无法转发请求到本地问题
+* exchange命令支持独立运行
+
+### 0.0.1
+
+* 拆分connect与exchaneg子命令，支持多应用转发请求到本地
