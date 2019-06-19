@@ -81,6 +81,10 @@ SSH Remote port-forward for POD starting
 2019/06/19 11:19:14 ssh remote port-forward start at pid: 3567
 ```
 
+Access local tomcat by internal service DNS address:
+
+> Note: if `kubectl connect` not running, you can only access from cluster
+
 ```
 $ curl http://tomcat.default.svc.cluster.local:8080 | grep '<h1>'
 <h1>Apache Tomcat/8.5.37</h1> #
