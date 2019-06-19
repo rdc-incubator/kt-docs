@@ -1,6 +1,6 @@
 # KT <small>0.0.1</small>
 
-> A sample kubernetes develope tools
+> A sample kubernetes develope tool
 
 - Connect And Exchange
 
