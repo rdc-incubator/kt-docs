@@ -1,3 +1,6 @@
 * [Home](/)
 * [Quick Start](quickstart.md)
 * [Downloads](downloads.md)
+* Best Practices
+  * [Local Dev](guide/localdev.md)
+  * [Mesh Best Practices](guide/mesh.md)
