@@ -1,0 +1,41 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: tomcat-gateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - hosts:
+    - 'tomcat.mesh.com'
+    port:
+      name: http
+      number: 80
+      protocol: HTTP
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: tomcat
+spec:
+  host: tomcat
+  subsets:
+  - name: v1
+    labels:
+      version: v1
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: tomcat
+spec:
+  gateways:
+  - tomcat-gateway
+  hosts:
+  - tomcat.mesh.com
+  - tomcat
+  http:
+  - route:
+    - destination:
+        host: tomcat
+        subset: v1

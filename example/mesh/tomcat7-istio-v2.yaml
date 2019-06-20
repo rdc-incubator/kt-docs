@@ -1,0 +1,52 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: tomcat-gateway
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - hosts:
+    - 'tomcat.mesh.com'
+    port:
+      name: http
+      number: 80
+      protocol: HTTP
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: tomcat
+spec:
+  host: tomcat
+  subsets:
+  - name: v1
+    labels:
+      version: v1
+  - name: ngzlj # 添加本地端点版本
+    labels:
+      version: ngzlj
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: tomcat
+spec:
+  gateways:
+  - tomcat-gateway
+  hosts:
+  - tomcat.mesh.com
+  - tomcat
+  http:
+  - match: 
+    - headers: 
+        user-agent:
+          exact: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:67.0) Gecko/20100101 Firefox/67.0
+    route:
+    - destination:
+        host: tomcat
+        subset: ngzlj
+  - route:
+    - destination:
+        host: tomcat
+        subset: v1
