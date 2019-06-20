@@ -4,5 +4,5 @@
 * 最佳实践
   * [本地联调测试](zh-cn/guide/localdev.md)
   * [Mesh最佳实践](zh-cn/guide/mesh.md)
-* [与其他工具比较](zh-cn/compare.md)
+* 与其他工具比较
 * [路线图](zh-cn/roadmap.md)
