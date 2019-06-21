@@ -92,12 +92,14 @@ $ curl http://tomcat.default.svc.cluster.local:8080 | grep '<h1>'
 
 ## Mesh: 基于Service Mesh按规则转发流量到本地
 
-> 查看更多：[Mesh最佳实践](http://localhost:3000/#/zh-cn/guide/mesh)
+> 查看更多：[Mesh最佳实践](/zh-cn/guide/mesh)
 
 `mesh`与`exchange`的最大区别在于，exchange会完全替换原有的应用实例。mesh命令创建代理容器，但是会保留原应用容器，代理容器会动态生成version标签，以便用于可以通过Istio流量规则将特定的流量转发到本地，同时保证环境正常链路始终可用：
 
+![](../_media/demo-3.gif)
+
 ```
-$ ktctl exchange tomcat --expose 8080
+$ ktctl mesh tomcat --expose 8080
 2019/06/19 22:10:23 'KT Connect' not runing, you can only access local app from cluster
 2019/06/19 22:10:24 Deploying proxy deployment tomcat-kt-ybocr in namespace default
 2019/06/19 22:10:24 Pod status is Pending
