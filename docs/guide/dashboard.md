@@ -7,6 +7,12 @@ KT Connect Dashboard support visualization your test environment status, as foll
 
 ![](../../_media/guide/kt-dashboard.png)
 
+Current support features as follow:
+
+* Connection statistical： how many cli connection to kubernetes cluster.
+* Topology View：the topo of the service.
+* Compnent Info: You can view the endpoint detil information, eq. the client local address.
+
 ## How to install
 
 You can install `KT Connect Dashboard` as follow
