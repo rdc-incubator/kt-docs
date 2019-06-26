@@ -1,6 +1,6 @@
 ![logo](_media/logo.png)
 
-# KT Connect<small>0.0.3</small>
+# KT Connect<small>0.0.4</small>
 
 > A sample kubernetes develope tool
 

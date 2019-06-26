@@ -26,6 +26,12 @@ Run kt as a kubectl plugin, all you need is kubectl.
 
 ## Release Note
 
+### 0.0.4
+
+> Release At 2019-06-26
+
+* Support KT Connect Dashboard
+
 ### 0.0.3
 
 > Release At 2019-06-19
