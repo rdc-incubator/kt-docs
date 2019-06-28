@@ -114,6 +114,13 @@ kubectl apply -f rbac-setup.yaml
 kubectl apply -f dashboard.yaml
 ```
 
+Or use shell as follow: 
+
+```
+kubectl apply -f https://rdc-incubators.oss-cn-beijing.aliyuncs.com/dashboard/stable/rbac.yaml
+kubectl apply -f https://rdc-incubators.oss-cn-beijing.aliyuncs.com/dashboard/stable/dashboard.yaml
+```
+
 After all components up, you can view in local:
 
 ```

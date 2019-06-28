@@ -112,6 +112,14 @@ kubectl apply -f rbac-setup.yaml
 kubectl apply -f dashboard.yaml
 ```
 
+或者直接使用一下命令: 
+
+```
+kubectl apply -f https://rdc-incubators.oss-cn-beijing.aliyuncs.com/dashboard/stable/rbac.yaml
+kubectl apply -f https://rdc-incubators.oss-cn-beijing.aliyuncs.com/dashboard/stable/dashboard.yaml
+```
+
+
 容器正常启动后，通过port-forward在本地访问：
 
 ```
